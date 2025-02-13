@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 >Hello World</h1>
+    <h1>New h1 </h1>
+
+    {% for i in ps %}
+    <h3>{{ i.full_name }}, {{ i.age }}</h3>
+    {% endfor %}
+
+</body>
+</html>
